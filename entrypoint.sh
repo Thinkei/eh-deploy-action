@@ -12,7 +12,7 @@ usage_docs() {
   echo "    author: tbd"
   echo "    trigger_deploy: true"
   echo "    wait_deploy: false"
-  echo "    deploy_token: \${{ github.token }}"
+  echo "    deploy_token: \${{ secrets.DEPLOY_TOKEN }}"
   echo "    wait_interval: 30"
 
 }

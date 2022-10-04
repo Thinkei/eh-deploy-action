@@ -12,7 +12,7 @@ Github Action to triggers a deployment workflow
     author: eh-bot
     trigger_deploy: true
     wait_deploy: false
-    deploy_token: ${{ github.token }}
+    deploy_token: ${{ secrets.DEPLOY_TOKEN }}
     wait_interval: 30
 ```
 
