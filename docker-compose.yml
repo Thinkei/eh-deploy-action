@@ -1,0 +1,7 @@
+version: "3.3"
+
+services:
+  deploy_action:
+    container_name: deploy_action
+    build: .
+    env_file: .env
