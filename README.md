@@ -18,7 +18,7 @@ Github Action to triggers a deployment workflow
 ### How to use in action
 
 ```yaml
-- uses: thinkei/deploy-action@v1.0.0
+- uses: thinkei/eh-deploy-action@1.0.0
   with:
     app_name: sbx-eng
     image_name: ehdevops/example:1.0.0
