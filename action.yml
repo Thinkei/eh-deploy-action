@@ -1,8 +1,8 @@
-name: 'deploy-action'
+name: 'eh-deploy-action'
 description: 'This action triggers a deployment workflow'
 author: 'hpsony94'
 branding:
-  icon: 'twitter'
+  icon: 'play'
   color: 'blue'
 inputs:
   app_name:

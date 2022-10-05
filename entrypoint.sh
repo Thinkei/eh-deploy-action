@@ -4,7 +4,7 @@ set -e
 usage_docs() {
   echo ""
   echo "You can use this Github Action with:"
-  echo "- uses: thinkei/deploy-action"
+  echo "- uses: thinkei/eh-deploy-action"
   echo "  with:"
   echo "    app_name: employment-hero"
   echo "    image_name: ehdevops/example:1.0.0"
