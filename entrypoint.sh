@@ -45,7 +45,7 @@ _validate_args() {
 
   if [ -z "${INPUT_AUTHOR}" ]
   then
-    INPUT_AUTHOR="nobody"
+    INPUT_AUTHOR="GithubCI"
   fi
 
   if [ -z "${INPUT_TRIGGER_DEPLOY}" ]

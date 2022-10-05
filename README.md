@@ -8,7 +8,7 @@ Github Action to triggers a deployment workflow
 | `app_name` | True|  | Application deployment|
 | `image_name`| True| | Container image url |
 | `cluster_context`| True |  | Cluster context `<staging>/<intergration>/<production>` |
-| `author` | False | `nobody`| Author of deployment |
+| `author` | False | `GithubCI`| Author of deployment |
 | `trigger_deploy` | True |  | Trigger deployment |
 | `wait_deploy` | False | `false` | Check deployment is totally rolled out |
 | `deploy_token` | True | | Token of deployment |
