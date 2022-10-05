@@ -16,7 +16,7 @@ inputs:
     required: true
   author:
     description: "Author of deployment"
-    required: true
+    required: false
   deploy_token:
     description: "Token of deployment"
     required: true
@@ -25,7 +25,7 @@ inputs:
     required: true
   wait_deploy:
     description: "Check deployment is totally rolled out"
-    required: true
+    required: false
   wait_interval:
     description: "The number of seconds delay between checking for result of run."
     required: false

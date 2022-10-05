@@ -1,6 +1,20 @@
 # deploy-action
 Github Action to triggers a deployment workflow
 
+## Arguments
+
+| Argument Name            | Required   | Default     | Description           |
+| ---------------------    | ---------- | ----------- | --------------------- |
+| `app_name` | True|  | Application deployment|
+| `image_name`| True| | Container image url |
+| `cluster_context`| True |  | Cluster context `<staging>/<intergration>/<production>` |
+| `author` | False | `nobody`| Author of deployment |
+| `trigger_deploy` | True |  | Trigger deployment |
+| `wait_deploy` | False | `false` | Check deployment is totally rolled out |
+| `deploy_token` | True | | Token of deployment |
+| `wait_interval` | False | `30` | The number of seconds delay between checking for result of run.|
+
+
 ### How to use in action
 
 ```yaml

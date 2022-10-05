@@ -45,9 +45,7 @@ _validate_args() {
 
   if [ -z "${INPUT_AUTHOR}" ]
   then
-    echo "Error: author is required"
-    usage_docs
-    exit 1
+    INPUT_AUTHOR="nobody"
   fi
 
   if [ -z "${INPUT_TRIGGER_DEPLOY}" ]
@@ -57,18 +55,10 @@ _validate_args() {
     exit 1
   fi
 
-  if [ -z "${INPUT_TRIGGER_DEPLOY}" ]
-  then
-    echo "Error: trigger_deploy is required"
-    usage_docs
-    exit 1
-  fi
 
   if [ -z "${INPUT_WAIT_DEPLOY}" ]
   then
-    echo "Error: wait_deploy is required"
-    usage_docs
-    exit 1
+    INPUT_WAIT_DEPLOY="false"
   fi
 
   if [ -z "${INPUT_DEPLOY_TOKEN}" ]
