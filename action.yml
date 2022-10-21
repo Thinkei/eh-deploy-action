@@ -12,7 +12,7 @@ inputs:
     description: "Container image registry"
     required: true
   cluster_context:
-    description: "Cluster context <staging>/<intergration>/<production>"
+    description: "Cluster context <staging>/<integration>/<production>"
     required: true
   author:
     description: "Author of deployment"

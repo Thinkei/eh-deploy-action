@@ -84,7 +84,7 @@ _gen_token() {
   if [ "${INPUT_CLUSTER_CONTEXT}" = "staging" ]
   then
     eval "$(herocli --server ${API_STG} login ${INPUT_DEPLOY_TOKEN} | tail -1 | xargs )"
-  elif [ "${INPUT_CLUSTER_CONTEXT}" = "intergration" ]
+  elif [ "${INPUT_CLUSTER_CONTEXT}" = "integration" ]
   then
     eval "$(herocli --server ${API_INT} login ${INPUT_DEPLOY_TOKEN} | tail -1 | xargs )"
   elif [ "${INPUT_CLUSTER_CONTEXT}" = "production" ]
@@ -98,7 +98,7 @@ _deploy() {
   if [ "${INPUT_CLUSTER_CONTEXT}" = "staging" ]
   then
     herocli --server ${API_STG} app deploy ${INPUT_APP_NAME} --image ${INPUT_IMAGE_NAME} --user ${INPUT_AUTHOR}
-  elif [ "${INPUT_CLUSTER_CONTEXT}" = "intergration" ]
+  elif [ "${INPUT_CLUSTER_CONTEXT}" = "integration" ]
   then
     herocli --server ${API_INT} app deploy ${INPUT_APP_NAME} --image ${INPUT_IMAGE_NAME} --user ${INPUT_AUTHOR}
   elif [ "${INPUT_CLUSTER_CONTEXT}" = "production" ]
@@ -122,7 +122,7 @@ _wait_for_deploy_to_finsh() {
       _lets_wait
       STATUS=$(_get_deployment_status "${API_STG}")
     done
-  elif [ "${INPUT_CLUSTER_CONTEXT}" = "intergration" ]
+  elif [ "${INPUT_CLUSTER_CONTEXT}" = "integration" ]
   then
     while ! [[ "${STATUS}" =~ "Success" ]]
     do
